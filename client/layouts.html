@@ -1,0 +1,16 @@
+<body class="">
+	{{> bertAlert}}
+	{{#if currentUser}}
+		{{> sidebar}}
+	{{/if}}
+	<!--this is where main_layout is rendered-->
+</body>
+
+<template name="supportLayout">
+	<div class="main-content">
+		<!--iron router says "hey, this is where we'll teild the current page that we are routing to-->
+		{{> yield}}
+	</div>
+</template>
+
+
